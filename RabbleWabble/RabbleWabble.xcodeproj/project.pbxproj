@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		DE18022D25B6BD0F008DCBF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18022C25B6BD0F008DCBF7 /* AppDelegate.swift */; };
 		DE18022F25B6BD0F008DCBF7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18022E25B6BD0F008DCBF7 /* SceneDelegate.swift */; };
-		DE18023125B6BD0F008DCBF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18023025B6BD0F008DCBF7 /* ViewController.swift */; };
+		DE18023125B6BD0F008DCBF7 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18023025B6BD0F008DCBF7 /* QuestionViewController.swift */; };
 		DE18023425B6BD0F008DCBF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE18023225B6BD0F008DCBF7 /* Main.storyboard */; };
 		DE18023625B6BD10008DCBF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE18023525B6BD10008DCBF7 /* Assets.xcassets */; };
 		DE18023925B6BD10008DCBF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE18023725B6BD10008DCBF7 /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		DE18022925B6BD0F008DCBF7 /* RabbleWabble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RabbleWabble.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE18022C25B6BD0F008DCBF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE18022E25B6BD0F008DCBF7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DE18023025B6BD0F008DCBF7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DE18023025B6BD0F008DCBF7 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		DE18023325B6BD0F008DCBF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DE18023525B6BD10008DCBF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE18023825B6BD10008DCBF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,15 +56,55 @@
 		DE18022B25B6BD0F008DCBF7 /* RabbleWabble */ = {
 			isa = PBXGroup;
 			children = (
-				DE18022C25B6BD0F008DCBF7 /* AppDelegate.swift */,
-				DE18022E25B6BD0F008DCBF7 /* SceneDelegate.swift */,
-				DE18023025B6BD0F008DCBF7 /* ViewController.swift */,
-				DE18023225B6BD0F008DCBF7 /* Main.storyboard */,
-				DE18023525B6BD10008DCBF7 /* Assets.xcassets */,
-				DE18023725B6BD10008DCBF7 /* LaunchScreen.storyboard */,
-				DE18023A25B6BD10008DCBF7 /* Info.plist */,
+				DE18024225B6BE99008DCBF7 /* AppDelegate */,
+				DE18024325B6BEAB008DCBF7 /* Controllers */,
+				DE18024425B6BEB0008DCBF7 /* Models */,
+				DE18024525B6BEB5008DCBF7 /* Resources */,
+				DE18024625B6BEBC008DCBF7 /* Views */,
 			);
 			path = RabbleWabble;
+			sourceTree = "<group>";
+		};
+		DE18024225B6BE99008DCBF7 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				DE18022C25B6BD0F008DCBF7 /* AppDelegate.swift */,
+				DE18022E25B6BD0F008DCBF7 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		DE18024325B6BEAB008DCBF7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DE18023025B6BD0F008DCBF7 /* QuestionViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DE18024425B6BEB0008DCBF7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DE18024525B6BEB5008DCBF7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DE18023525B6BD10008DCBF7 /* Assets.xcassets */,
+				DE18023A25B6BD10008DCBF7 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DE18024625B6BEBC008DCBF7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DE18023225B6BD0F008DCBF7 /* Main.storyboard */,
+				DE18023725B6BD10008DCBF7 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +177,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE18023125B6BD0F008DCBF7 /* ViewController.swift in Sources */,
+				DE18023125B6BD0F008DCBF7 /* QuestionViewController.swift in Sources */,
 				DE18022D25B6BD0F008DCBF7 /* AppDelegate.swift in Sources */,
 				DE18022F25B6BD0F008DCBF7 /* SceneDelegate.swift in Sources */,
 			);
@@ -288,7 +328,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5ZWZB58683;
-				INFOPLIST_FILE = RabbleWabble/Info.plist;
+				INFOPLIST_FILE = RabbleWabble/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +347,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5ZWZB58683;
-				INFOPLIST_FILE = RabbleWabble/Info.plist;
+				INFOPLIST_FILE = RabbleWabble/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
