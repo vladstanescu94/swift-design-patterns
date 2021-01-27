@@ -73,7 +73,13 @@
                             <constraint firstItem="UFt-IU-vlN" firstAttribute="bottom" secondItem="zk0-LZ-ZUl" secondAttribute="bottom" id="bFi-bT-ZkP"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Select Question Group" id="JZE-aj-APw"/>
+                    <navigationItem key="navigationItem" title="Select Question Group" id="JZE-aj-APw">
+                        <barButtonItem key="leftBarButtonItem" image="ic_settings" id="HiE-gC-Q6i">
+                            <connections>
+                                <segue destination="GuV-1z-f0B" kind="show" id="PdT-0O-BUz"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="zk0-LZ-ZUl" id="jBp-wF-WF7"/>
                     </connections>
@@ -81,6 +87,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vFA-ct-BcB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="118.84057971014494" y="93.75"/>
+        </scene>
+        <!--App Settings-->
+        <scene sceneID="tYw-sr-1aH">
+            <objects>
+                <tableViewController title="App Settings" id="GuV-1z-f0B" customClass="AppSettingsViewController" customModule="RabbleWabble" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="d0A-1R-eaR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <connections>
+                            <outlet property="dataSource" destination="GuV-1z-f0B" id="LDy-db-bcb"/>
+                            <outlet property="delegate" destination="GuV-1z-f0B" id="ka6-VJ-Dzv"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="dch-r5-CHm"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SBH-hq-u2B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="119" y="763"/>
         </scene>
         <!--Question View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -199,6 +224,7 @@
     <resources>
         <image name="ic_circle_check" width="80" height="80"/>
         <image name="ic_circle_x" width="80" height="80"/>
+        <image name="ic_settings" width="26" height="26"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
