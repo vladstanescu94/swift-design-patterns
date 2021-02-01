@@ -54,7 +54,7 @@ extension SelectQuestionGroupViewController: UITableViewDelegate {
     
     public override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let viewController = segue.destination as? QuestionViewController else { return }
-        viewController.questionStrategy = appSettings.getQuestionStrategy(for: selectedQuestionGroup)
+        viewController.questionStrategy = appSettings.getQuestionStrategy(for: questionGroupCaretaker)
         viewController.delegate = self
     }
 }
