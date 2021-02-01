@@ -26,6 +26,15 @@ public class SelectQuestionGroupViewController: UIViewController {
         get { return questionGroupCaretaker.selectedQuestionGroup }
         set { questionGroupCaretaker.selectedQuestionGroup = newValue }
     }
+    
+    public override func viewDidLoad() {
+        super.viewDidLoad()
+        questionGroups.forEach {
+            print("\($0.title): " + "correctCount \($0.score.correctCount), " +
+                    "incorrectCount \($0.score.incorrectCount)"
+            )
+        }
+    }
 }
 
 extension SelectQuestionGroupViewController: UITableViewDataSource {
