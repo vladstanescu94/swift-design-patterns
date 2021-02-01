@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class QuestionGroup {
+public class QuestionGroup: Codable {
     
     public class Score: Codable {
         public var correctCount: Int = 0
