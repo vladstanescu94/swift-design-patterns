@@ -58,7 +58,7 @@ public class BaseQuestionStrategy: QuestionStrategy {
     }
     
     public func markQuestionIncorrect(_ question: Question) {
-        incorrectCount -= 1
+        incorrectCount += 1
     }
     
     public func getQuestionIndexTitle() -> String {
