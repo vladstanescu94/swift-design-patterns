@@ -27,6 +27,7 @@
 		DE69ECB525C7F41D0050C9D5 /* QuestionGroupCaretaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE69ECB425C7F41D0050C9D5 /* QuestionGroupCaretaker.swift */; };
 		DE69ECB825C7F6220050C9D5 /* QuestionGroupData.json in Resources */ = {isa = PBXBuildFile; fileRef = DE69ECB725C7F6220050C9D5 /* QuestionGroupData.json */; };
 		DE69ECBC25C7F91A0050C9D5 /* BaseQuestionStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE69ECBB25C7F91A0050C9D5 /* BaseQuestionStrategy.swift */; };
+		DE70DC7925D67227000FA9B1 /* QuestionGroupBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE70DC7825D67227000FA9B1 /* QuestionGroupBuilder.swift */; };
 		DE95A9E625C00D85000E3C0C /* QuestionStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE95A9E525C00D85000E3C0C /* QuestionStrategy.swift */; };
 		DE95A9E925C00F9B000E3C0C /* SequentialQuestionStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE95A9E825C00F9B000E3C0C /* SequentialQuestionStrategy.swift */; };
 		DE95A9ED25C012DC000E3C0C /* RandomQuestionStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE95A9EC25C012DC000E3C0C /* RandomQuestionStrategy.swift */; };
@@ -57,6 +58,7 @@
 		DE69ECB425C7F41D0050C9D5 /* QuestionGroupCaretaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionGroupCaretaker.swift; sourceTree = "<group>"; };
 		DE69ECB725C7F6220050C9D5 /* QuestionGroupData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = QuestionGroupData.json; sourceTree = "<group>"; };
 		DE69ECBB25C7F91A0050C9D5 /* BaseQuestionStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseQuestionStrategy.swift; sourceTree = "<group>"; };
+		DE70DC7825D67227000FA9B1 /* QuestionGroupBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionGroupBuilder.swift; sourceTree = "<group>"; };
 		DE95A9E525C00D85000E3C0C /* QuestionStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionStrategy.swift; sourceTree = "<group>"; };
 		DE95A9E825C00F9B000E3C0C /* SequentialQuestionStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequentialQuestionStrategy.swift; sourceTree = "<group>"; };
 		DE95A9EC25C012DC000E3C0C /* RandomQuestionStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomQuestionStrategy.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				DE18024225B6BE99008DCBF7 /* AppDelegate */,
+				DE70DC7725D671E7000FA9B1 /* Builders */,
 				DE69ECAF25C7ECFF0050C9D5 /* CareTakers */,
 				DE18024325B6BEAB008DCBF7 /* Controllers */,
 				DE18024425B6BEB0008DCBF7 /* Models */,
@@ -167,6 +170,14 @@
 				DE69ECB425C7F41D0050C9D5 /* QuestionGroupCaretaker.swift */,
 			);
 			path = CareTakers;
+			sourceTree = "<group>";
+		};
+		DE70DC7725D671E7000FA9B1 /* Builders */ = {
+			isa = PBXGroup;
+			children = (
+				DE70DC7825D67227000FA9B1 /* QuestionGroupBuilder.swift */,
+			);
+			path = Builders;
 			sourceTree = "<group>";
 		};
 		DE95A9E425C00D49000E3C0C /* Strategies */ = {
@@ -259,6 +270,7 @@
 				DE18022D25B6BD0F008DCBF7 /* AppDelegate.swift in Sources */,
 				DE18025B25B6D32B008DCBF7 /* QuestionView.swift in Sources */,
 				DED4A0E625B6E72900237B63 /* QuestionGroupCell.swift in Sources */,
+				DE70DC7925D67227000FA9B1 /* QuestionGroupBuilder.swift in Sources */,
 				DE95A9E625C00D85000E3C0C /* QuestionStrategy.swift in Sources */,
 				DE13169625D53C7C009EFD94 /* CreateQuestionCell.swift in Sources */,
 				DE95A9ED25C012DC000E3C0C /* RandomQuestionStrategy.swift in Sources */,
