@@ -40,6 +40,7 @@ public class CreateQuestionGroupViewController: UITableViewController {
 
   // MARK: - Properties
   public var delegate: CreateQuestionGroupViewControllerDelegate?
+  public let questionGroupBuilder = QuestionGroupBuilder()
 
   public override func viewDidLoad() {
     super.viewDidLoad()
@@ -66,14 +67,14 @@ extension CreateQuestionGroupViewController {
   }
 
   public override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return 3
+    return questionGroupBuilder.questions.count + 2
   }
 
   public override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let row = indexPath.row
     if row == 0 {
       return titleCell(from: tableView, for: indexPath)
-    } else if row == 1 {
+    } else if row >= 1 && row <= questionGroupBuilder.questions.count {
       return self.questionCell(from: tableView, for: indexPath)
     } else {
       return addQuestionGroupCell(from: tableView, for: indexPath)
@@ -86,7 +87,7 @@ extension CreateQuestionGroupViewController {
                                              for: indexPath) as! CreateQuestionGroupTitleCell
     cell.delegate = self
 
-    // TODO: - Configure the cell
+    cell.titleTextField.text = questionGroupBuilder.title
 
     return cell
   }
@@ -97,9 +98,18 @@ extension CreateQuestionGroupViewController {
                                              for: indexPath) as! CreateQuestionCell
     cell.delegate = self
 
-    // TODO: - Configure the cell
+    let questionBuilder = self.questionBuilder(for: indexPath)
+    cell.delegate = self
+    cell.answerTextField.text = questionBuilder.answer
+    cell.hintTextField.text = questionBuilder.hint
+    cell.indexLabel.text = "Question \(indexPath.row)"
+    cell.promptTextField.text = questionBuilder.prompt
 
     return cell
+  }
+    
+  private func questionBuilder(for indexPath: IndexPath) -> QuestionBuilder {
+      return questionGroupBuilder.questions[indexPath.row - 1]
   }
 
   private func addQuestionGroupCell(from tableView: UITableView,
@@ -112,7 +122,16 @@ extension CreateQuestionGroupViewController {
 // MARK: - UITableViewDelegate
 extension CreateQuestionGroupViewController {
 
-  // TODO: - Add `UITableViewDelegate` methods
+    public override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        guard isLastIndexPath(indexPath) else { return }
+        questionGroupBuilder.addNewQuestion()
+        tableView.insertRows(at: [indexPath], with: .top)
+    }
+    
+    private func isLastIndexPath(_ indexPath: IndexPath) -> Bool {
+        return indexPath.row == tableView.numberOfRows(inSection: indexPath.section) - 1
+    }
 }
 
 // MARK: - CreateQuestionCellDelegate
