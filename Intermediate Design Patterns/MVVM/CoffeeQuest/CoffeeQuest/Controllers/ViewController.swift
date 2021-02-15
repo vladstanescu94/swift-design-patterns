@@ -110,7 +110,7 @@ extension ViewController: MKMapViewDelegate {
                                               longitude: yelpCoordinate.longitude)
       let name = business.name
       let rating = business.rating
-      let annotation = MapPin(coordinate: coordinate,
+      let annotation = BusinessMapViewModel(coordinate: coordinate,
                               name: name,
                               rating: rating)
       mapView.addAnnotation(annotation)
