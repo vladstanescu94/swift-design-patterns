@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DE13169025D53C65009EFD94 /* CreateQuestionGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE13168F25D53C65009EFD94 /* CreateQuestionGroupViewController.swift */; };
+		DE13169625D53C7C009EFD94 /* CreateQuestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE13169225D53C7C009EFD94 /* CreateQuestionCell.swift */; };
+		DE13169725D53C7C009EFD94 /* JapaneseTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE13169325D53C7C009EFD94 /* JapaneseTextField.swift */; };
+		DE13169825D53C7C009EFD94 /* NewQuestionGroup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE13169425D53C7C009EFD94 /* NewQuestionGroup.storyboard */; };
+		DE13169925D53C7C009EFD94 /* CreateQuestionGroupTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE13169525D53C7C009EFD94 /* CreateQuestionGroupTitleCell.swift */; };
+		DE18022D25B6BD0F008DCBF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18022C25B6BD0F008DCBF7 /* AppDelegate.swift */; };
+		DE18022F25B6BD0F008DCBF7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18022E25B6BD0F008DCBF7 /* SceneDelegate.swift */; };
+		DE18023125B6BD0F008DCBF7 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18023025B6BD0F008DCBF7 /* QuestionViewController.swift */; };
+		DE18023425B6BD0F008DCBF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE18023225B6BD0F008DCBF7 /* Main.storyboard */; };
+		DE18024A25B6C0B2008DCBF7 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18024925B6C0B2008DCBF7 /* Question.swift */; };
+		DE18024D25B6C151008DCBF7 /* QuestionGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18024C25B6C151008DCBF7 /* QuestionGroup.swift */; };
+		DE18025425B6D23E008DCBF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE18025325B6D23E008DCBF7 /* Assets.xcassets */; };
+		DE18025825B6D258008DCBF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE18025725B6D258008DCBF7 /* LaunchScreen.storyboard */; };
+		DE18025B25B6D32B008DCBF7 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE18025A25B6D32B008DCBF7 /* QuestionView.swift */; };
+		DE67616C25C1567A00ECCF63 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE67616B25C1567A00ECCF63 /* AppSettings.swift */; };
+		DE67617025C15AD500ECCF63 /* AppSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE67616F25C15AD500ECCF63 /* AppSettingsViewController.swift */; };
+		DE69ECB125C7ED390050C9D5 /* DiskCaretaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE69ECB025C7ED390050C9D5 /* DiskCaretaker.swift */; };
+		DE69ECB525C7F41D0050C9D5 /* QuestionGroupCaretaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE69ECB425C7F41D0050C9D5 /* QuestionGroupCaretaker.swift */; };
+		DE69ECB825C7F6220050C9D5 /* QuestionGroupData.json in Resources */ = {isa = PBXBuildFile; fileRef = DE69ECB725C7F6220050C9D5 /* QuestionGroupData.json */; };
+		DE69ECBC25C7F91A0050C9D5 /* BaseQuestionStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE69ECBB25C7F91A0050C9D5 /* BaseQuestionStrategy.swift */; };
+		DE70DC7925D67227000FA9B1 /* QuestionGroupBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE70DC7825D67227000FA9B1 /* QuestionGroupBuilder.swift */; };
+		DE95A9E625C00D85000E3C0C /* QuestionStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE95A9E525C00D85000E3C0C /* QuestionStrategy.swift */; };
+		DE95A9E925C00F9B000E3C0C /* SequentialQuestionStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE95A9E825C00F9B000E3C0C /* SequentialQuestionStrategy.swift */; };
+		DE95A9ED25C012DC000E3C0C /* RandomQuestionStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE95A9EC25C012DC000E3C0C /* RandomQuestionStrategy.swift */; };
+		DED4A0E325B6E5ED00237B63 /* SelectQuestionGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED4A0E225B6E5ED00237B63 /* SelectQuestionGroupViewController.swift */; };
+		DED4A0E625B6E72900237B63 /* QuestionGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED4A0E525B6E72900237B63 /* QuestionGroupCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DE13168F25D53C65009EFD94 /* CreateQuestionGroupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateQuestionGroupViewController.swift; sourceTree = "<group>"; };
+		DE13169225D53C7C009EFD94 /* CreateQuestionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateQuestionCell.swift; sourceTree = "<group>"; };
+		DE13169325D53C7C009EFD94 /* JapaneseTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JapaneseTextField.swift; sourceTree = "<group>"; };
+		DE13169425D53C7C009EFD94 /* NewQuestionGroup.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NewQuestionGroup.storyboard; sourceTree = "<group>"; };
+		DE13169525D53C7C009EFD94 /* CreateQuestionGroupTitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateQuestionGroupTitleCell.swift; sourceTree = "<group>"; };
+		DE18022925B6BD0F008DCBF7 /* RabbleWabble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RabbleWabble.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE18022C25B6BD0F008DCBF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DE18022E25B6BD0F008DCBF7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DE18023025B6BD0F008DCBF7 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		DE18023325B6BD0F008DCBF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DE18023A25B6BD10008DCBF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE18024925B6C0B2008DCBF7 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		DE18024C25B6C151008DCBF7 /* QuestionGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionGroup.swift; sourceTree = "<group>"; };
+		DE18025325B6D23E008DCBF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DE18025725B6D258008DCBF7 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DE18025A25B6D32B008DCBF7 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		DE67616B25C1567A00ECCF63 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		DE67616F25C15AD500ECCF63 /* AppSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsViewController.swift; sourceTree = "<group>"; };
+		DE69ECB025C7ED390050C9D5 /* DiskCaretaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskCaretaker.swift; sourceTree = "<group>"; };
+		DE69ECB425C7F41D0050C9D5 /* QuestionGroupCaretaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionGroupCaretaker.swift; sourceTree = "<group>"; };
+		DE69ECB725C7F6220050C9D5 /* QuestionGroupData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = QuestionGroupData.json; sourceTree = "<group>"; };
+		DE69ECBB25C7F91A0050C9D5 /* BaseQuestionStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseQuestionStrategy.swift; sourceTree = "<group>"; };
+		DE70DC7825D67227000FA9B1 /* QuestionGroupBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionGroupBuilder.swift; sourceTree = "<group>"; };
+		DE95A9E525C00D85000E3C0C /* QuestionStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionStrategy.swift; sourceTree = "<group>"; };
+		DE95A9E825C00F9B000E3C0C /* SequentialQuestionStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequentialQuestionStrategy.swift; sourceTree = "<group>"; };
+		DE95A9EC25C012DC000E3C0C /* RandomQuestionStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomQuestionStrategy.swift; sourceTree = "<group>"; };
+		DED4A0E225B6E5ED00237B63 /* SelectQuestionGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectQuestionGroupViewController.swift; sourceTree = "<group>"; };
+		DED4A0E525B6E72900237B63 /* QuestionGroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionGroupCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DE18022625B6BD0F008DCBF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DE18022025B6BD0F008DCBF7 = {
+			isa = PBXGroup;
+			children = (
+				DE18022B25B6BD0F008DCBF7 /* RabbleWabble */,
+				DE18022A25B6BD0F008DCBF7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DE18022A25B6BD0F008DCBF7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE18022925B6BD0F008DCBF7 /* RabbleWabble.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DE18022B25B6BD0F008DCBF7 /* RabbleWabble */ = {
+			isa = PBXGroup;
+			children = (
+				DE18024225B6BE99008DCBF7 /* AppDelegate */,
+				DE70DC7725D671E7000FA9B1 /* Builders */,
+				DE69ECAF25C7ECFF0050C9D5 /* CareTakers */,
+				DE18024325B6BEAB008DCBF7 /* Controllers */,
+				DE18024425B6BEB0008DCBF7 /* Models */,
+				DE18024525B6BEB5008DCBF7 /* Resources */,
+				DE95A9E425C00D49000E3C0C /* Strategies */,
+				DE18024625B6BEBC008DCBF7 /* Views */,
+			);
+			path = RabbleWabble;
+			sourceTree = "<group>";
+		};
+		DE18024225B6BE99008DCBF7 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				DE18022C25B6BD0F008DCBF7 /* AppDelegate.swift */,
+				DE18022E25B6BD0F008DCBF7 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		DE18024325B6BEAB008DCBF7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DE18023025B6BD0F008DCBF7 /* QuestionViewController.swift */,
+				DED4A0E225B6E5ED00237B63 /* SelectQuestionGroupViewController.swift */,
+				DE13168F25D53C65009EFD94 /* CreateQuestionGroupViewController.swift */,
+				DE67616F25C15AD500ECCF63 /* AppSettingsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DE18024425B6BEB0008DCBF7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DE18024925B6C0B2008DCBF7 /* Question.swift */,
+				DE18024C25B6C151008DCBF7 /* QuestionGroup.swift */,
+				DE67616B25C1567A00ECCF63 /* AppSettings.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DE18024525B6BEB5008DCBF7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DE18025325B6D23E008DCBF7 /* Assets.xcassets */,
+				DE18023A25B6BD10008DCBF7 /* Info.plist */,
+				DE69ECB725C7F6220050C9D5 /* QuestionGroupData.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DE18024625B6BEBC008DCBF7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DE13169225D53C7C009EFD94 /* CreateQuestionCell.swift */,
+				DE13169525D53C7C009EFD94 /* CreateQuestionGroupTitleCell.swift */,
+				DE13169325D53C7C009EFD94 /* JapaneseTextField.swift */,
+				DE18025725B6D258008DCBF7 /* LaunchScreen.storyboard */,
+				DE18023225B6BD0F008DCBF7 /* Main.storyboard */,
+				DE13169425D53C7C009EFD94 /* NewQuestionGroup.storyboard */,
+				DED4A0E525B6E72900237B63 /* QuestionGroupCell.swift */,
+				DE18025A25B6D32B008DCBF7 /* QuestionView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DE69ECAF25C7ECFF0050C9D5 /* CareTakers */ = {
+			isa = PBXGroup;
+			children = (
+				DE69ECB025C7ED390050C9D5 /* DiskCaretaker.swift */,
+				DE69ECB425C7F41D0050C9D5 /* QuestionGroupCaretaker.swift */,
+			);
+			path = CareTakers;
+			sourceTree = "<group>";
+		};
+		DE70DC7725D671E7000FA9B1 /* Builders */ = {
+			isa = PBXGroup;
+			children = (
+				DE70DC7825D67227000FA9B1 /* QuestionGroupBuilder.swift */,
+			);
+			path = Builders;
+			sourceTree = "<group>";
+		};
+		DE95A9E425C00D49000E3C0C /* Strategies */ = {
+			isa = PBXGroup;
+			children = (
+				DE95A9E525C00D85000E3C0C /* QuestionStrategy.swift */,
+				DE95A9E825C00F9B000E3C0C /* SequentialQuestionStrategy.swift */,
+				DE95A9EC25C012DC000E3C0C /* RandomQuestionStrategy.swift */,
+				DE69ECBB25C7F91A0050C9D5 /* BaseQuestionStrategy.swift */,
+			);
+			path = Strategies;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DE18022825B6BD0F008DCBF7 /* RabbleWabble */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE18023D25B6BD10008DCBF7 /* Build configuration list for PBXNativeTarget "RabbleWabble" */;
+			buildPhases = (
+				DE18022525B6BD0F008DCBF7 /* Sources */,
+				DE18022625B6BD0F008DCBF7 /* Frameworks */,
+				DE18022725B6BD0F008DCBF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RabbleWabble;
+			productName = RabbleWabble;
+			productReference = DE18022925B6BD0F008DCBF7 /* RabbleWabble.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DE18022125B6BD0F008DCBF7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					DE18022825B6BD0F008DCBF7 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = DE18022425B6BD0F008DCBF7 /* Build configuration list for PBXProject "RabbleWabble" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DE18022025B6BD0F008DCBF7;
+			productRefGroup = DE18022A25B6BD0F008DCBF7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DE18022825B6BD0F008DCBF7 /* RabbleWabble */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DE18022725B6BD0F008DCBF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE13169825D53C7C009EFD94 /* NewQuestionGroup.storyboard in Resources */,
+				DE18025825B6D258008DCBF7 /* LaunchScreen.storyboard in Resources */,
+				DE69ECB825C7F6220050C9D5 /* QuestionGroupData.json in Resources */,
+				DE18025425B6D23E008DCBF7 /* Assets.xcassets in Resources */,
+				DE18023425B6BD0F008DCBF7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DE18022525B6BD0F008DCBF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE67616C25C1567A00ECCF63 /* AppSettings.swift in Sources */,
+				DE18023125B6BD0F008DCBF7 /* QuestionViewController.swift in Sources */,
+				DE13169725D53C7C009EFD94 /* JapaneseTextField.swift in Sources */,
+				DE18024A25B6C0B2008DCBF7 /* Question.swift in Sources */,
+				DE18022D25B6BD0F008DCBF7 /* AppDelegate.swift in Sources */,
+				DE18025B25B6D32B008DCBF7 /* QuestionView.swift in Sources */,
+				DED4A0E625B6E72900237B63 /* QuestionGroupCell.swift in Sources */,
+				DE70DC7925D67227000FA9B1 /* QuestionGroupBuilder.swift in Sources */,
+				DE95A9E625C00D85000E3C0C /* QuestionStrategy.swift in Sources */,
+				DE13169625D53C7C009EFD94 /* CreateQuestionCell.swift in Sources */,
+				DE95A9ED25C012DC000E3C0C /* RandomQuestionStrategy.swift in Sources */,
+				DE95A9E925C00F9B000E3C0C /* SequentialQuestionStrategy.swift in Sources */,
+				DE18024D25B6C151008DCBF7 /* QuestionGroup.swift in Sources */,
+				DE67617025C15AD500ECCF63 /* AppSettingsViewController.swift in Sources */,
+				DE13169025D53C65009EFD94 /* CreateQuestionGroupViewController.swift in Sources */,
+				DE69ECBC25C7F91A0050C9D5 /* BaseQuestionStrategy.swift in Sources */,
+				DED4A0E325B6E5ED00237B63 /* SelectQuestionGroupViewController.swift in Sources */,
+				DE13169925D53C7C009EFD94 /* CreateQuestionGroupTitleCell.swift in Sources */,
+				DE69ECB125C7ED390050C9D5 /* DiskCaretaker.swift in Sources */,
+				DE69ECB525C7F41D0050C9D5 /* QuestionGroupCaretaker.swift in Sources */,
+				DE18022F25B6BD0F008DCBF7 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DE18023225B6BD0F008DCBF7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE18023325B6BD0F008DCBF7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DE18023B25B6BD10008DCBF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DE18023C25B6BD10008DCBF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DE18023E25B6BD10008DCBF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5ZWZB58683;
+				INFOPLIST_FILE = RabbleWabble/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vladstanescu.RabbleWabble;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DE18023F25B6BD10008DCBF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5ZWZB58683;
+				INFOPLIST_FILE = RabbleWabble/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vladstanescu.RabbleWabble;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DE18022425B6BD0F008DCBF7 /* Build configuration list for PBXProject "RabbleWabble" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE18023B25B6BD10008DCBF7 /* Debug */,
+				DE18023C25B6BD10008DCBF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE18023D25B6BD10008DCBF7 /* Build configuration list for PBXNativeTarget "RabbleWabble" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE18023E25B6BD10008DCBF7 /* Debug */,
+				DE18023F25B6BD10008DCBF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DE18022125B6BD0F008DCBF7 /* Project object */;
+}
