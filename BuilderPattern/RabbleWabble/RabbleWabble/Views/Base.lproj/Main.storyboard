@@ -8,6 +8,14 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--NewQuestionGroup-->
+        <scene sceneID="gbV-F3-W4W">
+            <objects>
+                <viewControllerPlaceholder storyboardName="NewQuestionGroup" id="N6R-2t-Qa4" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y5S-OY-RKA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="699" y="-317"/>
+        </scene>
         <!--Select Question Group-->
         <scene sceneID="jr6-dR-x2y">
             <objects>
@@ -77,6 +85,11 @@
                         <barButtonItem key="leftBarButtonItem" image="ic_settings" id="HiE-gC-Q6i">
                             <connections>
                                 <segue destination="GuV-1z-f0B" kind="show" id="PdT-0O-BUz"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="cEm-du-Grs">
+                            <connections>
+                                <segue destination="N6R-2t-Qa4" kind="presentation" id="10e-gJ-9Gx"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
