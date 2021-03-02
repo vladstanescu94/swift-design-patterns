@@ -41,6 +41,8 @@ public class AnnotationFactory {
     let image: UIImage
     
     switch rating {
+    case 0.0..<3.0:
+      image = UIImage(named: "terrible")!
     case 3.0..<3.5:
       image = UIImage(named: "bad")!
     case 3.5..<4.0:
