@@ -18,6 +18,7 @@
 		DE19577F25EE3286002CAA08 /* AnnotationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE19577E25EE3286002CAA08 /* AnnotationFactory.swift */; };
 		DE2918CB25EF8A8B0086DCA3 /* YLPClient+BusinessSearchClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2918CA25EF8A8B0086DCA3 /* YLPClient+BusinessSearchClient.swift */; };
 		DE2918CF25EF8AB80086DCA3 /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2918CE25EF8AB80086DCA3 /* Business.swift */; };
+		DE2918D225EF8ADD0086DCA3 /* BusinessSearchClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2918D125EF8ADD0086DCA3 /* BusinessSearchClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		DE19577E25EE3286002CAA08 /* AnnotationFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationFactory.swift; sourceTree = "<group>"; };
 		DE2918CA25EF8A8B0086DCA3 /* YLPClient+BusinessSearchClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "YLPClient+BusinessSearchClient.swift"; sourceTree = "<group>"; };
 		DE2918CE25EF8AB80086DCA3 /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
+		DE2918D125EF8ADD0086DCA3 /* BusinessSearchClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessSearchClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 		DE2918C925EF8A600086DCA3 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				DE2918D125EF8ADD0086DCA3 /* BusinessSearchClient.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 				DE19577F25EE3286002CAA08 /* AnnotationFactory.swift in Sources */,
 				C35933872023BF5700D85500 /* ViewController.swift in Sources */,
 				C35933852023BF5700D85500 /* AppDelegate.swift in Sources */,
+				DE2918D225EF8ADD0086DCA3 /* BusinessSearchClient.swift in Sources */,
 				DE2918CB25EF8A8B0086DCA3 /* YLPClient+BusinessSearchClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
