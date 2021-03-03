@@ -26,34 +26,13 @@
 /// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 /// THE SOFTWARE.
 
-import UIKit
 import MapKit
-import YelpAPI
 
-public class AnnotationFactory {
-  
-  public func createBusinessMapViewModel(for business: Business) -> BusinessMapViewModel {
-    
-    let coordinate = business.location
-    let name = business.name
-    let rating = business.rating
-    let image: UIImage
-    
-    switch rating {
-    case 0.0..<3.0:
-      image = UIImage(named: "terrible")!
-    case 3.0..<3.5:
-      image = UIImage(named: "bad")!
-    case 3.5..<4.0:
-      image = UIImage(named: "meh")!
-    case 4.0..<4.75:
-      image = UIImage(named: "good")!
-    case 4.75...5.0:
-      image = UIImage(named: "great")!
-    default:
-      image = UIImage(named: "bad")!
-    }
-    
-    return BusinessMapViewModel(coordinate: coordinate, name: name, rating: rating, image: image)
-  }
+public protocol BusinessSearchClient {
+  func search(with coordinate: CLLocationCoordinate2D,
+              term: String,
+              limit: UInt,
+              offset: UInt,
+              success: @escaping (([Business]) -> Void),
+              failure: @escaping ((Error?) -> Void))
 }

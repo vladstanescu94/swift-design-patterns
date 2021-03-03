@@ -16,6 +16,9 @@
 		C35933972023D71C00D85500 /* BusinessMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35933962023D71C00D85500 /* BusinessMapViewModel.swift */; };
 		C38756A0E9013F2F1E6253E0 /* Pods_CoffeeQuest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C9278042C96775D875EE9F /* Pods_CoffeeQuest.framework */; };
 		DE19577F25EE3286002CAA08 /* AnnotationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE19577E25EE3286002CAA08 /* AnnotationFactory.swift */; };
+		DE2918CB25EF8A8B0086DCA3 /* YLPClient+BusinessSearchClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2918CA25EF8A8B0086DCA3 /* YLPClient+BusinessSearchClient.swift */; };
+		DE2918CF25EF8AB80086DCA3 /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2918CE25EF8AB80086DCA3 /* Business.swift */; };
+		DE2918D225EF8ADD0086DCA3 /* BusinessSearchClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2918D125EF8ADD0086DCA3 /* BusinessSearchClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		C35933962023D71C00D85500 /* BusinessMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessMapViewModel.swift; sourceTree = "<group>"; };
 		C7C9278042C96775D875EE9F /* Pods_CoffeeQuest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoffeeQuest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE19577E25EE3286002CAA08 /* AnnotationFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationFactory.swift; sourceTree = "<group>"; };
+		DE2918CA25EF8A8B0086DCA3 /* YLPClient+BusinessSearchClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "YLPClient+BusinessSearchClient.swift"; sourceTree = "<group>"; };
+		DE2918CE25EF8AB80086DCA3 /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
+		DE2918D125EF8ADD0086DCA3 /* BusinessSearchClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessSearchClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,9 +135,12 @@
 		C35933832023BF5700D85500 /* CoffeeQuest */ = {
 			isa = PBXGroup;
 			children = (
+				DE2918C725EF8A520086DCA3 /* Adapters */,
 				4252EAA42023DFE500847430 /* AppDelegate */,
 				4252EAA52023DFE800847430 /* Controllers */,
 				DE19577D25EE326D002CAA08 /* Factories */,
+				DE2918C825EF8A580086DCA3 /* Models */,
+				DE2918C925EF8A600086DCA3 /* Protocols */,
 				4252EAA82023DFFB00847430 /* Resources */,
 				4252EAA62023DFEE00847430 /* ViewModels */,
 				4252EAA72023DFF400847430 /* Views */,
@@ -145,6 +154,30 @@
 				DE19577E25EE3286002CAA08 /* AnnotationFactory.swift */,
 			);
 			path = Factories;
+			sourceTree = "<group>";
+		};
+		DE2918C725EF8A520086DCA3 /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				DE2918CA25EF8A8B0086DCA3 /* YLPClient+BusinessSearchClient.swift */,
+			);
+			path = Adapters;
+			sourceTree = "<group>";
+		};
+		DE2918C825EF8A580086DCA3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DE2918CE25EF8AB80086DCA3 /* Business.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DE2918C925EF8A600086DCA3 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				DE2918D125EF8ADD0086DCA3 /* BusinessSearchClient.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,10 +295,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C35933972023D71C00D85500 /* BusinessMapViewModel.swift in Sources */,
+				DE2918CF25EF8AB80086DCA3 /* Business.swift in Sources */,
 				4252EAAA2023E05900847430 /* APIKeys.swift in Sources */,
 				DE19577F25EE3286002CAA08 /* AnnotationFactory.swift in Sources */,
 				C35933872023BF5700D85500 /* ViewController.swift in Sources */,
 				C35933852023BF5700D85500 /* AppDelegate.swift in Sources */,
+				DE2918D225EF8ADD0086DCA3 /* BusinessSearchClient.swift in Sources */,
+				DE2918CB25EF8A8B0086DCA3 /* YLPClient+BusinessSearchClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
