@@ -17,6 +17,7 @@
 		C38756A0E9013F2F1E6253E0 /* Pods_CoffeeQuest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C9278042C96775D875EE9F /* Pods_CoffeeQuest.framework */; };
 		DE19577F25EE3286002CAA08 /* AnnotationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE19577E25EE3286002CAA08 /* AnnotationFactory.swift */; };
 		DE2918CB25EF8A8B0086DCA3 /* YLPClient+BusinessSearchClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2918CA25EF8A8B0086DCA3 /* YLPClient+BusinessSearchClient.swift */; };
+		DE2918CF25EF8AB80086DCA3 /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2918CE25EF8AB80086DCA3 /* Business.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		C7C9278042C96775D875EE9F /* Pods_CoffeeQuest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoffeeQuest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE19577E25EE3286002CAA08 /* AnnotationFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationFactory.swift; sourceTree = "<group>"; };
 		DE2918CA25EF8A8B0086DCA3 /* YLPClient+BusinessSearchClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "YLPClient+BusinessSearchClient.swift"; sourceTree = "<group>"; };
+		DE2918CE25EF8AB80086DCA3 /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +165,7 @@
 		DE2918C825EF8A580086DCA3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				DE2918CE25EF8AB80086DCA3 /* Business.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C35933972023D71C00D85500 /* BusinessMapViewModel.swift in Sources */,
+				DE2918CF25EF8AB80086DCA3 /* Business.swift in Sources */,
 				4252EAAA2023E05900847430 /* APIKeys.swift in Sources */,
 				DE19577F25EE3286002CAA08 /* AnnotationFactory.swift in Sources */,
 				C35933872023BF5700D85500 /* ViewController.swift in Sources */,
