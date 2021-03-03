@@ -26,4 +26,10 @@
 /// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 /// THE SOFTWARE.
 
-import Foundation
+import MapKit
+
+public struct Business {
+  var name: String
+  var rating: Double
+  var location: CLLocationCoordinate2D
+}
