@@ -16,6 +16,7 @@
 		C35933972023D71C00D85500 /* BusinessMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35933962023D71C00D85500 /* BusinessMapViewModel.swift */; };
 		C38756A0E9013F2F1E6253E0 /* Pods_CoffeeQuest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C9278042C96775D875EE9F /* Pods_CoffeeQuest.framework */; };
 		DE19577F25EE3286002CAA08 /* AnnotationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE19577E25EE3286002CAA08 /* AnnotationFactory.swift */; };
+		DE1A03E626089CC9004DCD29 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1A03E526089CC9004DCD29 /* Filter.swift */; };
 		DE2918CB25EF8A8B0086DCA3 /* YLPClient+BusinessSearchClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2918CA25EF8A8B0086DCA3 /* YLPClient+BusinessSearchClient.swift */; };
 		DE2918CF25EF8AB80086DCA3 /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2918CE25EF8AB80086DCA3 /* Business.swift */; };
 		DE2918D225EF8ADD0086DCA3 /* BusinessSearchClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2918D125EF8ADD0086DCA3 /* BusinessSearchClient.swift */; };
@@ -35,6 +36,7 @@
 		C35933962023D71C00D85500 /* BusinessMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessMapViewModel.swift; sourceTree = "<group>"; };
 		C7C9278042C96775D875EE9F /* Pods_CoffeeQuest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoffeeQuest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE19577E25EE3286002CAA08 /* AnnotationFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationFactory.swift; sourceTree = "<group>"; };
+		DE1A03E526089CC9004DCD29 /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
 		DE2918CA25EF8A8B0086DCA3 /* YLPClient+BusinessSearchClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "YLPClient+BusinessSearchClient.swift"; sourceTree = "<group>"; };
 		DE2918CE25EF8AB80086DCA3 /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
 		DE2918D125EF8ADD0086DCA3 /* BusinessSearchClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessSearchClient.swift; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				DE2918CE25EF8AB80086DCA3 /* Business.swift */,
+				DE1A03E526089CC9004DCD29 /* Filter.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 				C35933872023BF5700D85500 /* ViewController.swift in Sources */,
 				C35933852023BF5700D85500 /* AppDelegate.swift in Sources */,
 				DE2918D225EF8ADD0086DCA3 /* BusinessSearchClient.swift in Sources */,
+				DE1A03E626089CC9004DCD29 /* Filter.swift in Sources */,
 				DE2918CB25EF8A8B0086DCA3 /* YLPClient+BusinessSearchClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
