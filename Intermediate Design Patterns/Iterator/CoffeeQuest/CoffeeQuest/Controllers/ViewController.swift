@@ -36,6 +36,7 @@ public class ViewController: UIViewController {
   public let client: BusinessSearchClient = YLPClient(apiKey: YelpAPIKey)
   public var businesses: [Business] = []
   private let locationManager = CLLocationManager()
+  private var filter = Filter.identity()
   
   // MARK: - Outlets
   @IBOutlet public var mapView: MKMapView! {
@@ -53,7 +54,14 @@ public class ViewController: UIViewController {
   
   // MARK: - Actions
   @IBAction func businessFilterToggleChanged(_ sender: UISwitch) {
+    if sender.isOn {
+      filter = Filter.starRating(atLeast: 4.0)
+    } else {
+      filter = Filter.identity()
+    }
     
+    filter.businesses = businesses
+    addAnnotations()
   }
 }
 
@@ -83,6 +91,7 @@ extension ViewController: MKMapViewDelegate {
         guard let self = self else { return }
         
         self.businesses = businesses
+        self.filter.businesses = businesses
         
         DispatchQueue.main.async {
           self.addAnnotations()
@@ -94,8 +103,10 @@ extension ViewController: MKMapViewDelegate {
   }
   
   private func addAnnotations() {
-    for business in businesses {
-      let viewModel = annotationFactory.createBusinessMapViewModel(for: business)
+    mapView.removeAnnotations(mapView.annotations)
+    for business in filter {
+      let viewModel =
+        annotationFactory.createBusinessMapViewModel(for: business)
       mapView.addAnnotation(viewModel)
     }
   }
