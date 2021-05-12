@@ -69,8 +69,7 @@ public class DrawView: UIView {
   }
 
   public func clear() {
-    lines = []
-    layer.sublayers?.removeAll()
+    currentState.clear()
   }
   
   public func copyLines(from source: DrawView) {
