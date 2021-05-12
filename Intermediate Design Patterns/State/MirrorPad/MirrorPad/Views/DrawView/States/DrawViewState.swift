@@ -46,6 +46,8 @@ public class DrawViewState {
   public func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) { }
   
   @discardableResult internal func transitionToState(matching identifier: AnyHashable) -> DrawViewState {
-    return self
+    let state = drawView.states[identifier]!
+    drawView.currentState = state
+    return state
   }
 }
