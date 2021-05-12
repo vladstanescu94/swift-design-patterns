@@ -73,8 +73,6 @@ public class DrawView: UIView {
   }
   
   public func copyLines(from source: DrawView) {
-    layer.sublayers?.removeAll()
-    lines = source.lines.deepCopy()
-    lines.forEach { layer.addSublayer($0) }
+    currentState.copyLines(from: source)
   }
 }
