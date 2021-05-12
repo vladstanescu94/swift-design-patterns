@@ -34,6 +34,15 @@ public class DrawView: UIView {
   public var lineColor: UIColor = .black
   public var lineWidth: CGFloat = 5.0
   public var lines: [LineShape] = []
+  
+  public lazy var states = [
+    AcceptInputState.identifier: AcceptInputState(drawView: self),
+    AnimateState.identifier: AnimateState(drawView: self),
+    ClearState.identifier: ClearState(drawView: self),
+    CopyState.identifier: CopyState(drawView: self)
+  ]
+  
+  public lazy var currentState = states[AcceptInputState.identifier]!
 
   @IBInspectable public var scaleX: CGFloat = 1 {
     didSet { applyTransform() }
