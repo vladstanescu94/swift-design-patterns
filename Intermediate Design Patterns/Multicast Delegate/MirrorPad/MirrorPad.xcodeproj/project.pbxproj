@@ -20,6 +20,7 @@
 		DE0FE42A264A75580070FC6D /* CopyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0FE429264A75580070FC6D /* CopyState.swift */; };
 		DE0FE42C264A75670070FC6D /* DrawViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0FE42B264A75670070FC6D /* DrawViewState.swift */; };
 		DE1159E9263AA42000715613 /* Copying.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1159E8263AA42000715613 /* Copying.swift */; };
+		DEFEB6062668C76700CC3B27 /* MulticastDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFEB6052668C76700CC3B27 /* MulticastDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		DE0FE429264A75580070FC6D /* CopyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyState.swift; sourceTree = "<group>"; };
 		DE0FE42B264A75670070FC6D /* DrawViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawViewState.swift; sourceTree = "<group>"; };
 		DE1159E8263AA42000715613 /* Copying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Copying.swift; sourceTree = "<group>"; };
+		DEFEB6052668C76700CC3B27 /* MulticastDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MulticastDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				DE1159E8263AA42000715613 /* Copying.swift */,
+				DEFEB6052668C76700CC3B27 /* MulticastDelegate.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 				DE0FE428264A754C0070FC6D /* ClearState.swift in Sources */,
 				DE1159E9263AA42000715613 /* Copying.swift in Sources */,
 				42F35C3620449C9A00584FAD /* AppDelegate.swift in Sources */,
+				DEFEB6062668C76700CC3B27 /* MulticastDelegate.swift in Sources */,
 				DE0FE424264A75310070FC6D /* AcceptInputState.swift in Sources */,
 				424387E420449D300056B653 /* DrawView.swift in Sources */,
 			);
