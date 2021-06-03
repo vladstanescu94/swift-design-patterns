@@ -26,34 +26,44 @@
 /// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 /// THE SOFTWARE.
 
-import UIKit
+import Foundation
 
-public class DrawViewState {
-  public class var identifier: AnyHashable {
-    return ObjectIdentifier(self)
-  }
-  
-  public unowned let drawView: DrawView
-  
-  public init(drawView: DrawView) {
-    self.drawView = drawView
-  }
-  
-  public func animate() { }
-  public func copyLines(from source: DrawView) { }
-  public func clear() { }
-  public func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) { }
-  public func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) { }
-  
-  @discardableResult internal func transitionToState(matching identifier: AnyHashable) -> DrawViewState {
-    let state = drawView.states[identifier]!
-    drawView.currentState = state
-    return state
-  }
+public class MulticastDelegate<ProtocolType> {
+    private class DelegateWrapper {
+        weak var delegate: AnyObject?
+        
+        init(_ delegate: AnyObject) {
+            self.delegate = delegate
+        }
+    }
+    
+    private var delegateWrappers: [DelegateWrapper]
+    
+    private var delegates: [ProtocolType] {
+        delegateWrappers = delegateWrappers.filter { $0.delegate != nil }
+        return delegateWrappers.map { $0.delegate! } as! [ProtocolType]
+    }
+    
+    public init(delegates: [ProtocolType] = []) {
+        delegateWrappers = delegates.map {
+            DelegateWrapper($0 as AnyObject)
+        }
+    }
+    
+    public func addDelegate(_ delegate: ProtocolType) {
+        let wrapper = DelegateWrapper(delegate as AnyObject)
+        delegateWrappers.append(wrapper)
+    }
+    
+    public func removeDelegate(_ delegate: ProtocolType) {
+        guard let index = delegateWrappers.firstIndex(where: { $0.delegate === (delegate as AnyObject) }) else {
+            return
+        }
+        delegateWrappers.remove(at: index)
+    }
+    
+    public func invokeDelegates(_ closure: (ProtocolType) -> ()) {
+        delegates.forEach { closure($0) }
+    }
 }
 
-extension DrawViewState: DrawViewDelegate {
-  public func drawView(_ source: DrawView, didAddLine line: LineShape) { }
-  
-  public func drawView(_ source: DrawView, didAddPoint point: CGPoint) { }
-}
