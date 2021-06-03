@@ -34,6 +34,13 @@ public class ViewController: UIViewController {
   @IBOutlet public var drawViewContainer: UIView!
   @IBOutlet public var inputDrawView: DrawView!
   @IBOutlet public var mirrorDrawViews: [DrawView]!
+  
+  public override func viewDidLoad() {
+    super.viewDidLoad()
+    mirrorDrawViews.forEach {
+      inputDrawView.addDelegate($0)
+    }
+  }
 
   // MARK: - Actions
   @IBAction public func animatePressed(_ sender: Any) {
