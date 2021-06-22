@@ -20,6 +20,10 @@
 		DE0FE42A264A75580070FC6D /* CopyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0FE429264A75580070FC6D /* CopyState.swift */; };
 		DE0FE42C264A75670070FC6D /* DrawViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0FE42B264A75670070FC6D /* DrawViewState.swift */; };
 		DE1159E9263AA42000715613 /* Copying.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1159E8263AA42000715613 /* Copying.swift */; };
+		DEBF90652681CB9B00285FB9 /* ImageRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBF90632681CB9B00285FB9 /* ImageRenderer.swift */; };
+		DEBF90662681CB9B00285FB9 /* DrawingSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBF90642681CB9B00285FB9 /* DrawingSelectionViewController.swift */; };
+		DEBF90682681CDDF00285FB9 /* DrawingSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEBF90672681CDDF00285FB9 /* DrawingSelectionViewController.xib */; };
+		DEBF906A2681CE7900285FB9 /* ShareFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBF90692681CE7900285FB9 /* ShareFacade.swift */; };
 		DEFEB6062668C76700CC3B27 /* MulticastDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFEB6052668C76700CC3B27 /* MulticastDelegate.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +43,10 @@
 		DE0FE429264A75580070FC6D /* CopyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyState.swift; sourceTree = "<group>"; };
 		DE0FE42B264A75670070FC6D /* DrawViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawViewState.swift; sourceTree = "<group>"; };
 		DE1159E8263AA42000715613 /* Copying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Copying.swift; sourceTree = "<group>"; };
+		DEBF90632681CB9B00285FB9 /* ImageRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageRenderer.swift; sourceTree = "<group>"; };
+		DEBF90642681CB9B00285FB9 /* DrawingSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingSelectionViewController.swift; sourceTree = "<group>"; };
+		DEBF90672681CDDF00285FB9 /* DrawingSelectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DrawingSelectionViewController.xib; sourceTree = "<group>"; };
+		DEBF90692681CE7900285FB9 /* ShareFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareFacade.swift; sourceTree = "<group>"; };
 		DEFEB6052668C76700CC3B27 /* MulticastDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MulticastDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,6 +73,9 @@
 		4245EC7C2074417100E347D0 /* Facades */ = {
 			isa = PBXGroup;
 			children = (
+				DEBF90642681CB9B00285FB9 /* DrawingSelectionViewController.swift */,
+				DEBF90632681CB9B00285FB9 /* ImageRenderer.swift */,
+				DEBF90692681CE7900285FB9 /* ShareFacade.swift */,
 			);
 			path = Facades;
 			sourceTree = "<group>";
@@ -119,6 +130,7 @@
 		42F35C4920449CAA00584FAD /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DEBF90672681CDDF00285FB9 /* DrawingSelectionViewController.xib */,
 				DE0FE421264A6A2C0070FC6D /* DrawView */,
 				42F35C3E20449C9A00584FAD /* LaunchScreen.storyboard */,
 				42F35C3920449C9A00584FAD /* Main.storyboard */,
@@ -217,6 +229,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEBF90682681CDDF00285FB9 /* DrawingSelectionViewController.xib in Resources */,
 				42F35C4020449C9A00584FAD /* LaunchScreen.storyboard in Resources */,
 				42F35C3D20449C9A00584FAD /* Assets.xcassets in Resources */,
 				42F35C3B20449C9A00584FAD /* Main.storyboard in Resources */,
@@ -231,9 +244,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE0FE426264A753E0070FC6D /* AnimateState.swift in Sources */,
+				DEBF906A2681CE7900285FB9 /* ShareFacade.swift in Sources */,
 				42F35C3820449C9A00584FAD /* ViewController.swift in Sources */,
 				DE0FE42A264A75580070FC6D /* CopyState.swift in Sources */,
 				424387E72044A1ED0056B653 /* LineShape.swift in Sources */,
+				DEBF90652681CB9B00285FB9 /* ImageRenderer.swift in Sources */,
+				DEBF90662681CB9B00285FB9 /* DrawingSelectionViewController.swift in Sources */,
 				DE0FE42C264A75670070FC6D /* DrawViewState.swift in Sources */,
 				DE0FE428264A754C0070FC6D /* ClearState.swift in Sources */,
 				DE1159E9263AA42000715613 /* Copying.swift in Sources */,
