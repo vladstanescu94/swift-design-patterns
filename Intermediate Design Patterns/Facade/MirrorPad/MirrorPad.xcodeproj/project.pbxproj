@@ -23,6 +23,7 @@
 		DEBF90652681CB9B00285FB9 /* ImageRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBF90632681CB9B00285FB9 /* ImageRenderer.swift */; };
 		DEBF90662681CB9B00285FB9 /* DrawingSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBF90642681CB9B00285FB9 /* DrawingSelectionViewController.swift */; };
 		DEBF90682681CDDF00285FB9 /* DrawingSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEBF90672681CDDF00285FB9 /* DrawingSelectionViewController.xib */; };
+		DEBF906A2681CE7900285FB9 /* ShareFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBF90692681CE7900285FB9 /* ShareFacade.swift */; };
 		DEFEB6062668C76700CC3B27 /* MulticastDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFEB6052668C76700CC3B27 /* MulticastDelegate.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,7 @@
 		DEBF90632681CB9B00285FB9 /* ImageRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageRenderer.swift; sourceTree = "<group>"; };
 		DEBF90642681CB9B00285FB9 /* DrawingSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingSelectionViewController.swift; sourceTree = "<group>"; };
 		DEBF90672681CDDF00285FB9 /* DrawingSelectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DrawingSelectionViewController.xib; sourceTree = "<group>"; };
+		DEBF90692681CE7900285FB9 /* ShareFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareFacade.swift; sourceTree = "<group>"; };
 		DEFEB6052668C76700CC3B27 /* MulticastDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MulticastDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,6 +75,7 @@
 			children = (
 				DEBF90642681CB9B00285FB9 /* DrawingSelectionViewController.swift */,
 				DEBF90632681CB9B00285FB9 /* ImageRenderer.swift */,
+				DEBF90692681CE7900285FB9 /* ShareFacade.swift */,
 			);
 			path = Facades;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE0FE426264A753E0070FC6D /* AnimateState.swift in Sources */,
+				DEBF906A2681CE7900285FB9 /* ShareFacade.swift in Sources */,
 				42F35C3820449C9A00584FAD /* ViewController.swift in Sources */,
 				DE0FE42A264A75580070FC6D /* CopyState.swift in Sources */,
 				424387E72044A1ED0056B653 /* LineShape.swift in Sources */,
