@@ -15,7 +15,19 @@
 		C3F4A34B2055F79F006C8699 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3F4A3492055F79F006C8699 /* Main.storyboard */; };
 		C3F4A34D2055F79F006C8699 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3F4A34C2055F79F006C8699 /* Assets.xcassets */; };
 		C3F4A3502055F79F006C8699 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3F4A34E2055F79F006C8699 /* LaunchScreen.storyboard */; };
+		DEE2C0042692FB39002E5B11 /* YetiTheme.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEE2C0032692FB25002E5B11 /* YetiTheme.framework */; };
+		DEE2C0052692FB39002E5B11 /* YetiTheme.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DEE2C0032692FB25002E5B11 /* YetiTheme.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DEE2C0022692FB25002E5B11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEE2BFFE2692FB25002E5B11 /* YetiTheme.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C3B431F0205926D300B0CAC1;
+			remoteInfo = YetiTheme;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		C33A814C2057561C009FFFB1 /* Embed Frameworks */ = {
@@ -24,6 +36,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				DEE2C0052692FB39002E5B11 /* YetiTheme.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -41,6 +54,7 @@
 		C3F4A34C2055F79F006C8699 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3F4A34F2055F79F006C8699 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C3F4A3512055F79F006C8699 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEE2BFFE2692FB25002E5B11 /* YetiTheme.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = YetiTheme.xcodeproj; path = YetiTheme/YetiTheme.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEE2C0042692FB39002E5B11 /* YetiTheme.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +88,7 @@
 		C3F4A3392055F79F006C8699 = {
 			isa = PBXGroup;
 			children = (
+				DEE2BFFE2692FB25002E5B11 /* YetiTheme.xcodeproj */,
 				C3F4A3442055F79F006C8699 /* YetiJokes */,
 				C3F4A3432055F79F006C8699 /* Products */,
 				427D6F47205855A90083563A /* Frameworks */,
@@ -136,6 +152,14 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		DEE2BFFF2692FB25002E5B11 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DEE2C0032692FB25002E5B11 /* YetiTheme.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -185,12 +209,28 @@
 			mainGroup = C3F4A3392055F79F006C8699;
 			productRefGroup = C3F4A3432055F79F006C8699 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = DEE2BFFF2692FB25002E5B11 /* Products */;
+					ProjectRef = DEE2BFFE2692FB25002E5B11 /* YetiTheme.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				C3F4A3412055F79F006C8699 /* YetiJokes */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		DEE2C0032692FB25002E5B11 /* YetiTheme.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = YetiTheme.framework;
+			remoteRef = DEE2C0022692FB25002E5B11 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		C3F4A3402055F79F006C8699 /* Resources */ = {
