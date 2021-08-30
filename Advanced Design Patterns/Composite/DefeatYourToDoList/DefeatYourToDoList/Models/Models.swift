@@ -28,15 +28,35 @@
 
 import Foundation
 
-final class ToDoItem {
+protocol ToDo {
+  var name: String { get set }
+  var isComplete: Bool { get set }
+  var subtasks: [ToDo] { get set }
+}
+
+final class ToDoItemWithCheckList: ToDo {
+  var name: String
+  var isComplete: Bool
+  var subtasks: [ToDo]
+  
+  init(name: String, subtasks: [ToDo]) {
+    self.name = name
+    isComplete = false
+    self.subtasks = subtasks
+  }
+}
+
+final class ToDoItem: ToDo {
 
   // MARK: - Properties
   var name: String
   var isComplete: Bool
+  var subtasks: [ToDo]
 
   // MARK: - Initializers
   init(name: String) {
     self.name = name
     isComplete = false
+    subtasks = []
   }
 }
