@@ -36,7 +36,7 @@ public class ToDoCell: UICollectionViewCell {
   @IBOutlet var subTaskCollectionView: UICollectionView!
 
   // MARK: - Properties
-  var subtasks: [ToDoItem] = []
+  var subtasks: [ToDo] = []
   
   public override func layoutSubviews() {
     checkBoxView.layer.borderWidth = 1
@@ -76,7 +76,7 @@ extension ToDoCell: UICollectionViewDataSource {
 extension ToDoCell: UICollectionViewDelegate {
 
   public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-    let currentToDo = subtasks[indexPath.row]
+    var currentToDo = subtasks[indexPath.row]
 
     if currentToDo.isComplete {
       currentToDo.isComplete = false
