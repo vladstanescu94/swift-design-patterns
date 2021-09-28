@@ -46,7 +46,36 @@ public class PlayGameState: GameState {
     gameplayView.moveCountLabel.text = nil
     gameplayView.gameboardView.clear()
 
-    // TODO: - Play the Game
+    let gameMoves = combinePlayerMoves()
+    performMove(at: 0, with: gameMoves)
+  }
+  
+  private func combinePlayerMoves() -> [MoveCommand] {
+    var result: [MoveCommand] = []
+    let player1Moves = movesForPlayer[player1]!
+    let player2Moves = movesForPlayer[player2]!
+    
+    assert(player1Moves.count == player2Moves.count)
+    
+    for i in 0..<player1Moves.count {
+      result.append(player1Moves[i])
+      result.append(player2Moves[i])
+    }
+    
+    return result
+  }
+  
+  private func performMove(at index: Int, with moves: [MoveCommand]) {
+    guard index < moves.count else {
+      displayWinner()
+      return
+    }
+    
+    let move = moves[index]
+    move.execute { [weak self] in
+      guard let self = self else { return }
+      self.performMove(at: index + 1, with: moves)
+    }
   }
 
   private func displayWinner() {
